@@ -1,0 +1,22 @@
+{
+  "name": "servicefront",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "pnpm@11.17.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "first-result": "node tools/inspect-example.mjs examples/site-painting-trusted-local.json",
+    "lint": "node --test tools/check-candidate.test.mjs && node tools/check-candidate.mjs",
+    "typecheck": "pnpm -r --if-present typecheck",
+    "test": "pnpm -r --if-present test",
+    "build": "pnpm -r --if-present build",
+    "verify": "pnpm lint && pnpm typecheck && pnpm test && pnpm build && pnpm first-result"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "vitest": "3.2.7"
+  }
+}
