@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://schemas.example.invalid/template-recipe.schema.json",
+  "title": "Servicefront TemplateRecipe",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "key",
+    "version",
+    "niche",
+    "status",
+    "pages",
+    "componentVariants",
+    "tokens",
+    "editPolicy"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "const": 1
+    },
+    "key": {
+      "type": "string",
+      "enum": [
+        "painting-premium",
+        "painting-trusted-local",
+        "painting-gallery-first"
+      ]
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "niche": {
+      "const": "painting_contractor"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "draft",
+        "canary",
+        "active",
+        "deprecated"
+      ]
+    },
+    "displayName": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 500
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "pattern": "^/(?:[a-z0-9-]+)?$"
+      }
+    },
+    "componentVariants": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "minItems": 1,
+        "items": {
+          "type": "string"
+        }
+      }
+    },
+    "tokens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fontHeading",
+        "fontBody",
+        "accentOptions",
+        "radius",
+        "spacingDensity"
+      ],
+      "properties": {
+        "fontHeading": {
+          "type": "string"
+        },
+        "fontBody": {
+          "type": "string"
+        },
+        "accentOptions": {
+          "type": "array",
+          "minItems": 1,
+          "maxItems": 12,
+          "items": {
+            "type": "string",
+            "pattern": "^#[0-9A-Fa-f]{6}$"
+          }
+        },
+        "radius": {
+          "type": "string",
+          "enum": [
+            "none",
+            "small",
+            "medium",
+            "large"
+          ]
+        },
+        "spacingDensity": {
+          "type": "string",
+          "enum": [
+            "compact",
+            "balanced",
+            "spacious"
+          ]
+        },
+        "motion": {
+          "type": "string",
+          "enum": [
+            "none",
+            "restrained",
+            "expressive"
+          ]
+        }
+      }
+    },
+    "editPolicy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ownerAllowedPaths",
+        "staffAllowedPaths",
+        "forbiddenPaths"
+      ],
+      "properties": {
+        "ownerAllowedPaths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "staffAllowedPaths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "forbiddenPaths": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ownerPublishRisk": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string",
+            "enum": [
+              "low",
+              "medium",
+              "high"
+            ]
+          }
+        }
+      }
+    },
+    "fallbackMediaPack": {
+      "type": "string",
+      "maxLength": 100
+    },
+    "engineCompatibility": {
+      "type": "string",
+      "maxLength": 40
+    }
+  }
+}
