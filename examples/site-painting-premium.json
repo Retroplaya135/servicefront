@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "identity": {
+    "displayName": "Aurelia Painting & Finish",
+    "businessType": "painting_contractor",
+    "tagline": "Walls Worth Coming Home To",
+    "city": "Menifee",
+    "state": "CA",
+    "postalCode": "00000",
+    "textWordmark": true
+  },
+  "contact": {
+    "phone": "+12025550123",
+    "displayPhone": "(202) 555-0123",
+    "email": "hello@example.invalid",
+    "primaryCta": "request_estimate",
+    "hours": [
+      {
+        "day": "monday",
+        "closed": false,
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "day": "tuesday",
+        "closed": false,
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "day": "wednesday",
+        "closed": false,
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "day": "thursday",
+        "closed": false,
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "day": "friday",
+        "closed": false,
+        "opens": "08:00",
+        "closes": "17:00"
+      },
+      {
+        "day": "saturday",
+        "closed": true
+      },
+      {
+        "day": "sunday",
+        "closed": true
+      }
+    ]
+  },
+  "services": [
+    {
+      "key": "interior_painting",
+      "name": "Interior Painting",
+      "summary": "Careful preparation and clean interior painting for lived-in homes.",
+      "body": "A fictional demonstration service description.",
+      "enabled": true,
+      "pagePath": "/interior-painting"
+    },
+    {
+      "key": "exterior_painting",
+      "name": "Exterior Painting",
+      "summary": "Preparation-led exterior painting for a polished, durable appearance.",
+      "body": "A fictional demonstration service description.",
+      "enabled": true,
+      "pagePath": "/exterior-painting"
+    },
+    {
+      "key": "cabinet_refinishing",
+      "name": "Cabinet Refinishing",
+      "summary": "A refined cabinet transformation without replacing the full kitchen.",
+      "body": "A fictional demonstration service description.",
+      "enabled": true,
+      "pagePath": "/cabinet-refinishing"
+    }
+  ],
+  "serviceAreas": [
+    "Menifee",
+    "Nearby Menifee communities"
+  ],
+  "trust": {
+    "rating": 4.8,
+    "reviewCount": 48,
+    "guarantees": []
+  },
+  "testimonials": [
+    {
+      "quote": "This is fictional demonstration copy and is not a real customer review.",
+      "name": "Demonstration only",
+      "sourceType": "fictional_demo"
+    }
+  ],
+  "media": [
+    {
+      "assetId": "00000000-0000-0000-0000-000000000065",
+      "role": "hero",
+      "alt": "Licensed concept image for Aurelia Painting & Finish",
+      "rightsStatus": "licensed",
+      "sourceUrl": "https://assets.example.invalid/painting-premium/1.jpg",
+      "placeholder": true,
+      "focalX": 0.5,
+      "focalY": 0.5
+    },
+    {
+      "assetId": "00000000-0000-0000-0000-000000000066",
+      "role": "project",
+      "alt": "Licensed concept image for Aurelia Painting & Finish",
+      "rightsStatus": "licensed",
+      "sourceUrl": "https://assets.example.invalid/painting-premium/2.jpg",
+      "placeholder": true,
+      "focalX": 0.5,
+      "focalY": 0.5
+    },
+    {
+      "assetId": "00000000-0000-0000-0000-000000000067",
+      "role": "project",
+      "alt": "Licensed concept image for Aurelia Painting & Finish",
+      "rightsStatus": "licensed",
+      "sourceUrl": "https://assets.example.invalid/painting-premium/3.jpg",
+      "placeholder": true,
+      "focalX": 0.5,
+      "focalY": 0.5
+    },
+    {
+      "assetId": "00000000-0000-0000-0000-000000000068",
+      "role": "service",
+      "alt": "Licensed concept image for Aurelia Painting & Finish",
+      "rightsStatus": "licensed",
+      "sourceUrl": "https://assets.example.invalid/painting-premium/4.jpg",
+      "placeholder": true,
+      "focalX": 0.5,
+      "focalY": 0.5
+    },
+    {
+      "assetId": "00000000-0000-0000-0000-000000000069",
+      "role": "service",
+      "alt": "Licensed concept image for Aurelia Painting & Finish",
+      "rightsStatus": "licensed",
+      "sourceUrl": "https://assets.example.invalid/painting-premium/5.jpg",
+      "placeholder": true,
+      "focalX": 0.5,
+      "focalY": 0.5
+    },
+    {
+      "assetId": "00000000-0000-0000-0000-00000000006a",
+      "role": "background",
+      "alt": "Licensed concept image for Aurelia Painting & Finish",
+      "rightsStatus": "licensed",
+      "sourceUrl": "https://assets.example.invalid/painting-premium/6.jpg",
+      "placeholder": true,
+      "focalX": 0.5,
+      "focalY": 0.5
+    }
+  ],
+  "pages": [
+    {
+      "path": "/",
+      "title": "Home",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "home-hero",
+          "component": "hero",
+          "variant": "editorial",
+          "enabled": true,
+          "headline": "Walls Worth Coming Home To",
+          "body": "Refined interior, exterior, and cabinet painting for homeowners who care about the finish."
+        },
+        {
+          "id": "home-trust",
+          "component": "trust_bar",
+          "variant": "standard",
+          "enabled": true
+        },
+        {
+          "id": "home-services",
+          "component": "service_grid",
+          "variant": "minimal_columns",
+          "enabled": true,
+          "dataKey": "services"
+        },
+        {
+          "id": "home-gallery",
+          "component": "project_gallery",
+          "variant": "editorial_masonry",
+          "enabled": true,
+          "dataKey": "media"
+        },
+        {
+          "id": "home-process",
+          "component": "process",
+          "variant": "three_step",
+          "enabled": true
+        },
+        {
+          "id": "home-reviews",
+          "component": "review_wall",
+          "variant": "quiet_quotes",
+          "enabled": true,
+          "dataKey": "testimonials"
+        },
+        {
+          "id": "home-form",
+          "component": "estimate_form",
+          "variant": "standard",
+          "enabled": true
+        },
+        {
+          "id": "home-final",
+          "component": "final_cta",
+          "variant": "standard",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "/interior-painting",
+      "title": "Interior Painting",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "interior-hero",
+          "component": "hero",
+          "variant": "service",
+          "enabled": true,
+          "headline": "Interior Painting",
+          "body": "Fresh, carefully prepared interiors with a clean and respectful process."
+        },
+        {
+          "id": "interior-services",
+          "component": "service_grid",
+          "variant": "detail",
+          "enabled": true,
+          "dataKey": "services"
+        },
+        {
+          "id": "interior-form",
+          "component": "estimate_form",
+          "variant": "standard",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "/exterior-painting",
+      "title": "Exterior Painting",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "exterior-hero",
+          "component": "hero",
+          "variant": "service",
+          "enabled": true,
+          "headline": "Exterior Painting",
+          "body": "Preparation-led exterior painting designed for lasting curb appeal."
+        },
+        {
+          "id": "exterior-gallery",
+          "component": "project_gallery",
+          "variant": "editorial_masonry",
+          "enabled": true,
+          "dataKey": "media"
+        },
+        {
+          "id": "exterior-form",
+          "component": "estimate_form",
+          "variant": "standard",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "/cabinet-refinishing",
+      "title": "Cabinet Refinishing",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "cabinet-hero",
+          "component": "hero",
+          "variant": "service",
+          "enabled": true,
+          "headline": "Cabinet Refinishing",
+          "body": "A cleaner, more refined kitchen transformation without replacing every cabinet."
+        },
+        {
+          "id": "cabinet-process",
+          "component": "process",
+          "variant": "four_step",
+          "enabled": true
+        },
+        {
+          "id": "cabinet-form",
+          "component": "estimate_form",
+          "variant": "standard",
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "path": "/about",
+      "title": "About",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "about-story",
+          "component": "about_story",
+          "variant": "standard",
+          "enabled": true,
+          "headline": "A painting experience built around care",
+          "body": "This fictional demonstration shows how a local painting company can present its process, work, and customer experience clearly."
+        },
+        {
+          "id": "about-areas",
+          "component": "service_areas",
+          "variant": "standard",
+          "enabled": true,
+          "dataKey": "serviceAreas"
+        }
+      ]
+    },
+    {
+      "path": "/request-estimate",
+      "title": "Request an Estimate",
+      "enabled": true,
+      "sections": [
+        {
+          "id": "estimate-hero",
+          "component": "hero",
+          "variant": "compact",
+          "enabled": true,
+          "headline": "Request a Painting Estimate",
+          "body": "Tell us about the project and the team will follow up."
+        },
+        {
+          "id": "estimate-form",
+          "component": "estimate_form",
+          "variant": "detailed",
+          "enabled": true
+        }
+      ]
+    }
+  ],
+  "theme": {
+    "recipeKey": "painting-premium",
+    "accent": "#8A6A4A",
+    "tone": "light",
+    "heroVariant": "editorial",
+    "galleryVariant": "editorial_masonry"
+  },
+  "seo": {
+    "siteTitle": "Aurelia Painting & Finish | Menifee Painting Concept",
+    "defaultDescription": "Fictional website demonstration for a residential painting company in Menifee.",
+    "robots": "noindex,nofollow,noarchive",
+    "structuredDataEnabled": true
+  },
+  "forms": {
+    "estimateFormEnabled": true,
+    "formDefinitionId": "00000000-0000-0000-0000-0000000003e9",
+    "successMessage": "Thanks. This demonstration form does not contact a real business.",
+    "privacyNotice": "Demonstration only."
+  },
+  "provenance": {
+    "generatedAt": "2026-08-30T20:00:00Z",
+    "generationMode": "fictional_demo",
+    "evidence": [
+      {
+        "id": "demo-definition",
+        "kind": "operator_note",
+        "source": "Servicefront fictional demo specification",
+        "capturedAt": "2026-08-30T20:00:00Z",
+        "notes": "All names, numbers, reviews, and content are fictional."
+      }
+    ]
+  }
+}
